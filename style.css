@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    border: 0;
+    font-size: 16px;
+}
+
+.navbar {
+    background:linear-gradient(rgba(0,0,0,0), rgb(0, 0, 0)), url(gif.gif);
+    background-size:contain;
+    background-position: center;
+    height: 100vh;
+
+}
+/* 
+.logo{
+    width: 7rem;
+    height: 7rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(Team\ Focus.png);
+    background-size: cover;
+    border-radius: 50%;
+   
+} */
+.footer-content {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 1%;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+
+
+
+.title {
+    padding-top: 180px;
+    text-align: center;
+    color: palegoldenrod;
+    font-size: 8rem;
+    font-family: 'Rubik Wet Paint', system-ui;
+}
+
+.title:hover{
+    font-family: 'Rubik Glitch', system-ui;
+}
+
+.subtitle {
+    font-size: 2rem;
+    color: palegoldenrod;
+    text-align: center;
+    font-family: 'Rubik Scribble', system-ui;
+}
+
+.subtitle:hover{
+    font-family: 'Rubik Glitch', system-ui;
+}
+
+.nav-links {
+    text-align: center;
+    background-color:#000;
+    border-radius: 50px 50px 0 0;
+    margin: 1% auto 0;
+}
+
+.nav-links a {
+    color: palegoldenrod;
+    padding: 1%;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block; /* Maintain inline display for the links */
+    transition: 0.6s ease-in-out;
+}
+
+
+
+.nav-links a:hover {
+    background-color: black;
+    color: palegoldenrod;
+    padding: 1.5%;
+}
+
+
+#sideMenu {
+    /* color: palegoldenrod; */
+    /* margin: 1% 0.8%; */
+    background: #000;
+    opacity: 0.63;
+    /* border: 0; */
+    position: fixed;
+    top: 0%;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    
+    z-index: 2;
+    transition: 0.5s;    
+}
+
+.banner-btn{
+    margin: 70px auto 0;
+    text-align: center;
+}
+
+.banner-btn a{
+    text-align: center;
+    width: 150px;
+    text-decoration: none;
+    display:inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: palegoldenrod;
+    border: .5px solid palegoldenrod;
+    /* font-family: 'Rubik Scribble', system-ui; */
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+.banner-btn a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: palegoldenrod;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.banner-btn a:hover span{
+    width: 100%;
+}
+
+.banner-btn a:hover{
+    color: #000;
+    font-family: 'Rubik Glitch', system-ui;
+}
+
+nav ul li{
+    text-align: left;
+    list-style: none;
+    margin: 50px 20px;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    text-align: center;
+    color: palegoldenrod;
+    transition-property: all;
+    transition-duration: 0.5s;
+    display: inline-block;
+    position:relative;
+    height: 20px; width: 80px;
+    transition: .5s;
+    z-index: 0;
+}
+
+nav ul li a span{
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left:0;
+    background: #fff;
+    border-radius: 0 5px 0 5px;
+    z-index: -1;
+    position:absolute;
+    transition: 0.6s;
+}
+
+nav ul li a:hover span{
+    width: 100%;
+    height: 100%;
+}
+
+nav ul li a:hover{
+    background: #000;
+    border-radius: 6px;
+    padding: 7.5%;
+    color: black;
+    font-family: 'Rubik Glitch', system-ui;
+
+
+}
+
+
+#menubtn{
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    text-align:center;
+    position: fixed;
+    color: #fff;
+    opacity: 0.8;
+    left: 10px;
+    top: 10px;
+    z-index: 3;
+    cursor: pointer;
+
+}
+
+#menubtn img {
+    width: 20px;
+    margin-top: 5px;
+}
+
+#men{
+    background: palegoldenrod;
+    color: black;
+    padding: 0.51%;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.loading-bar {
+    width: 0;
+    height: 2px;
+    background-color: palegoldenrod;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    transition: width 0.5s ease;
+}
